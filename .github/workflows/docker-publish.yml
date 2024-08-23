@@ -27,6 +27,7 @@ jobs:
 
       - name: Compile Contracts
         run: |
+          ls
           cd contracts
           npx hardhat compile
 
