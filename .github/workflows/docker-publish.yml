@@ -29,6 +29,9 @@ jobs:
         run: |
           npx hardhat compile
 
+      - name: list the directories
+        run: ls 
+
       - name: Run Unit Tests
         run: |
           cd contracts
