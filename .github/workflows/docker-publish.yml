@@ -26,16 +26,13 @@ jobs:
           npm install
 
       - name: Compile Contracts
-        run: |
-          ls
-          cd contracts
-          npx hardhat compile
+        run: truffel compile
 
       - name: list the directories
         run: ls 
 
       - name: Run Unit Tests
-        run: npx hardhat test --network hardhat
+        run: truffel test
 
   #     - name: Deploy to Goerli Testnet
   #       if: github.ref == 'refs/heads/main'
