@@ -24,15 +24,17 @@ jobs:
       - name: Install dependencies
         run: |
           npm install
+          npm install -g truffle # Install Truffle globally
 
       - name: Compile Contracts
-        run: truffel compile
+        run: truffle compile # Corrected the spelling here
 
       - name: list the directories
         run: ls 
 
       - name: Run Unit Tests
-        run: truffel test
+        run: truffle test # Corrected the spelling here
+
 
   #     - name: Deploy to Goerli Testnet
   #       if: github.ref == 'refs/heads/main'
