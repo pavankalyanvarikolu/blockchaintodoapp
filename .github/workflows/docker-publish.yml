@@ -15,7 +15,7 @@ jobs:
     services:
       ganache:
         image: trufflesuite/ganache-cli
-        options: "--host 0.0.0.0 --port 7545 --defaultBalanceEther 1000"
+        options: "--defaultBalanceEther 1000 --deterministic"
         ports:
           - 7545:7545
 
@@ -38,6 +38,3 @@ jobs:
 
       - name: Run Unit Tests
         run: truffle test
-
-      - name: List directory contents (Debugging)
-        run: ls -al
