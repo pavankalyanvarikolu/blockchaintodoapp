@@ -19,7 +19,7 @@ jobs:
       - name: Set up Node.js environment
         uses: actions/setup-node@v2
         with:
-          node-version: '20'
+          node-version: '16'
 
       - name: Install dependencies
         run: |
@@ -63,10 +63,8 @@ jobs:
 
   #     - name: Continuous Monitoring
   #       run: |
-  #         # Example of using Etherscan, Infura, or custom scripts for monitoring
   #         echo "Monitoring deployed contract activity on Goerli Testnet..."
 
   #     - name: Set Up Alerts
   #       run: |
-  #         # Configure alerts via email, Slack, or other notification services
   #         echo "Setting up alerts for contract events..."
