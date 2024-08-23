@@ -31,6 +31,7 @@ jobs:
 
       - name: Run Unit Tests
         run: |
+          cd contracts
           npx hardhat test --network hardhat
 
   #     - name: Deploy to Goerli Testnet
